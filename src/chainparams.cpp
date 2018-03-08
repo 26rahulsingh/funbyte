@@ -123,8 +123,8 @@ public:
         vSeeds.push_back(CDNSSeedData("funbyte.network", "seed3.funbyte.network"));
         vSeeds.push_back(CDNSSeedData("funbyte.network", "seed4.funbyte.network"));
 
-        // FunByte addresses start with 'G'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
+        // FunByte addresses start with 'F'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
         // FunByte script addresses start with '5'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,10);
         // FunByte private keys start with '5' or 'G' (?)
@@ -231,8 +231,8 @@ public:
         vSeeds.push_back(CDNSSeedData("funbyte.network",  "testnet-dns.funbyte.network"));
         vSeeds.push_back(CDNSSeedData("funbyte.network",  "testnet2-dns.funbyte.network"));
 
-        // Testnet FunByte addresses start with 'n'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
+        // Testnet FunByte addresses start with 'f'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,95);
         // Testnet FunByte script addresses start with '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,20);
         // Testnet private keys start with '9' or 'c' (Bitcoin defaults) (?)
@@ -342,8 +342,8 @@ public:
             0,
             0
         };
-        // Regtest FunByte addresses start with 'n'
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,112);
+        // Regtest FunByte addresses start with 'f'
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,95);
         // Regtest FunByte script addresses start with '9'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,20);
         // Regtest private keys start with '9' or 'c' (Bitcoin defaults) (?)

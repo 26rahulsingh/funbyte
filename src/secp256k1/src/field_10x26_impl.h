@@ -481,7 +481,7 @@ SECP256K1_INLINE static void secp256k1_fe_mul_inner(uint32_t *r, const uint32_t 
     /* [d 0 0 0 0 0 0 0 0 0] = [p9 0 0 0 0 0 0 0 0 0] */
     t9 = d & M; d >>= 26;
     VERIFY_BITS(t9, 26);
-    VERIFY_BITS(d, 38);
+    VERIFY_BITS(d, 38); 
     /* [d t9 0 0 0 0 0 0 0 0 0] = [p9 0 0 0 0 0 0 0 0 0] */
 
     c  = (uint64_t)a[0] * b[0];
