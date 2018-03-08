@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=FunByte
+Comment=FunByte P2P Cryptocurrency
+Exec=funbyte-qt %u
+Terminal=false
+Type=Application
+Icon=funbyte128
+MimeType=x-scheme-handler/funbyte;
+Categories=Office;Finance;
+Name[en_US]=funbyte-qt.desktop

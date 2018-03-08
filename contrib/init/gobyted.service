@@ -1,0 +1,22 @@
+[Unit]
+Description=FunByte's distributed currency daemon
+After=network.target
+
+[Service]
+User=funbytecore
+Group=funbytecore
+
+Type=forking
+PIDFile=/var/lib/funbyted/funbyted.pid
+ExecStart=/usr/bin/funbyted -daemon -pid=/var/lib/funbyted/funbyted.pid \
+-conf=/etc/funbytecore/funbyte.conf -datadir=/var/lib/funbyted -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

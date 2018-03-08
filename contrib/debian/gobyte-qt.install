@@ -1,0 +1,6 @@
+usr/local/bin/funbyte-qt usr/bin
+share/pixmaps/funbyte32.xpm usr/share/pixmaps
+share/pixmaps/funbyte16.xpm usr/share/pixmaps
+share/pixmaps/funbyte128.png usr/share/pixmaps
+debian/funbyte-qt.desktop usr/share/applications
+debian/funbyte-qt.protocol usr/share/kde4/services/
