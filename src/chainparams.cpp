@@ -44,7 +44,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "The Star Malaysia 17th November 2017 FunByte Genesis Reborn";
-    const CScript genesisOutputScript = CScript() << ParseHex("043e5a5fbfbb2caa5f4b7c8fd24d890d6c244de254d579b5ba629f64c1b48275f59e0e1c834a60f6ffb4aaa022aaa4866434ca729a12465f80618fb2070045cb16") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("04324c49177fa71c0c233a6559df38edc82b728898fe8a63c3aa012a1818029457b8a063d98dbe8ef8ec939f71d569a805e1ea8ba2d4be21902bc28cc9ac9e7beb") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
