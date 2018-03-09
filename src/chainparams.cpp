@@ -118,10 +118,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x0000033b01055cf8df90b01a14734cae92f7039b9b0e48887b4e33a469d7bc07"));
         assert(genesis.hashMerkleRoot == uint256S("0xdc9a719dc1bcda39107ea55424f00cab512170a1cb69efa08531f483f2399f21"));
 
-        vSeeds.push_back(CDNSSeedData("funbyte.network", "seed1.funbyte.network"));
-        vSeeds.push_back(CDNSSeedData("funbyte.network", "seed2.funbyte.network"));
-        vSeeds.push_back(CDNSSeedData("funbyte.network", "seed3.funbyte.network"));
-        vSeeds.push_back(CDNSSeedData("funbyte.network", "seed4.funbyte.network"));
+        vSeeds.push_back(CDNSSeedData(NULL, NULL));
 
         // FunByte addresses start with 'F'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,35);
@@ -228,8 +225,7 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("funbyte.network",  "testnet-dns.funbyte.network"));
-        vSeeds.push_back(CDNSSeedData("funbyte.network",  "testnet2-dns.funbyte.network"));
+        vSeeds.push_back(CDNSSeedData(NULL, NULL));
 
         // Testnet FunByte addresses start with 'f'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,95);
